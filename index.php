@@ -2,7 +2,7 @@
 if (isset($_POST['year-issn-text'])) {
 	$parameter = $_POST['year-issn-text']; 
 }
-else $parameter = "Girilmedi";
+else $parameter = "Empty";
 $len= strlen ($parameter);
 $issn="";
 $year = "0000";
