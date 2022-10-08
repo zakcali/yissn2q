@@ -6,7 +6,6 @@ CREATE TABLE IF NOT EXISTS "quartile" (
 	"quartile"	TEXT NOT NULL,
 	CONSTRAINT "yie" PRIMARY KEY("year","issn","eissn")
 );
-INSERT INTO "quartile" VALUES ('year','issn','eissn','quartile');
 INSERT INTO "quartile" VALUES (2021,'0007-9235','1542-4863','Q1');
 INSERT INTO "quartile" VALUES (2021,'0140-6736','1474-547X','Q1');
 INSERT INTO "quartile" VALUES (2021,'0028-4793','1533-4406','Q1');
