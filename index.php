@@ -39,7 +39,7 @@ echo <<<_END
 Year: $year issn/eissn: $issn Quartile: $quartile <br/>
 Enter year,issn/eissn (14 characters) below box<br/>
 <input type="text" name="year-issn-text" size="14" maxlength="14" id="year-issn">
-<input type="submit"> <button onclick="document.getElementById('year-issn').value=''">Sil</button>
+<input type="submit"> <button onclick="document.getElementById('year-issn').value=''">Delete</button>
 </form>
 </body>
 </html>
