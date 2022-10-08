@@ -12,7 +12,7 @@ if (strlen($parameter) == 14) {
 	$issn = substr ($parameter,-9);
 	$year = substr ($parameter,0,4);
 	$db= new SQLite3("database.db");
-	$stmt = $db->prepare('select * from quartile where year= :year and issn= :issn OR eissn= :issn');
+	$stmt = $db->prepare('select * from quartile where year= :year and (issn= :issn OR eissn= :issn)');
 	$stmt->bindValue(':year',$year,SQLITE3_TEXT);
 	$stmt->bindValue(':issn',$issn,SQLITE3_TEXT);
 	$result = $stmt->execute();
